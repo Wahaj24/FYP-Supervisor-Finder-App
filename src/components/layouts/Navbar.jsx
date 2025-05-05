@@ -1,10 +1,10 @@
 import React from "react";
 
 const Navbar = () => (
-  <nav className="bg-blue-600 text-white p-4">
-    <div className="container mx-auto flex justify-between">
+  <nav className="bg-blue-600 text-white p-4 fixed top-0 w-full z-10 shadow-md">
+    <div className="container mx-auto flex justify-between items-center">
       <h1 className="text-xl font-bold">FYP Finder</h1>
-      <div className="flex space-x-6">
+      <div className="hidden md:flex space-x-6">
         {/* Anchor links with updated names */}
         <a href="#hero" className="hover:text-gray-200">
           Welcome
@@ -31,6 +31,10 @@ const Navbar = () => (
           More Info
         </a>
       </div>
+      {/* Mobile Menu Button */}
+      <button className="md:hidden bg-white text-blue-600 px-4 py-2 rounded-lg">
+        Menu
+      </button>
     </div>
   </nav>
 );

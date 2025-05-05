@@ -1,4 +1,7 @@
 import React from "react";
+import TestimonialBox from "./TestimonialBox";
+import SectionContainer from "../../layouts/SectionContainer";
+import CardLayout from "../../layouts/CardLayout"; // Corrected import path
 
 const Testimonials = () => {
   const testimonials = [
@@ -20,21 +23,19 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="bg-white p-6 shadow-md">
-      <h2 className="text-3xl font-bold mb-4">Testimonials</h2>
-      <div className="space-y-4">
+    <SectionContainer className="bg-white">
+      <h2 className="text-3xl font-bold mb-8 text-center">Testimonials</h2>
+      <CardLayout>
         {testimonials.map((testimonial, index) => (
-          <div
+          <TestimonialBox
             key={index}
-            className="bg-gray-100 p-4 rounded shadow-md border border-gray-200"
-          >
-            <p className="text-gray-700 italic">"{testimonial.feedback}"</p>
-            <p className="text-gray-900 font-bold mt-2">{testimonial.name}</p>
-            <p className="text-gray-500 text-sm">{testimonial.role}</p>
-          </div>
+            name={testimonial.name}
+            feedback={testimonial.feedback}
+            role={testimonial.role}
+          />
         ))}
-      </div>
-    </div>
+      </CardLayout>
+    </SectionContainer>
   );
 };
 

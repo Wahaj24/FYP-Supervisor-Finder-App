@@ -7,9 +7,8 @@ const CallToAction = () => {
       <p className="text-lg mb-8">
         Join our platform and find the perfect supervisor for your project today!
       </p>
-      {/* Button to navigate to the Info Section */}
       <a
-        href="#info-section" // Update this to the target section's ID
+        href="#info-section"
         className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 shadow-md"
       >
         Get Started

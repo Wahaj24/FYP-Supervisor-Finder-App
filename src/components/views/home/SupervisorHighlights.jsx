@@ -1,4 +1,7 @@
 import React from 'react';
+import SupervisorCard from './SupervisorCard';
+import SectionContainer from "../../layouts/SectionContainer";
+import CardLayout from "../../layouts/CardLayout";
 
 const SupervisorHighlights = () => {
   const highlights = [
@@ -7,7 +10,7 @@ const SupervisorHighlights = () => {
       name: 'Dr. John Doe',
       expertise: 'Artificial Intelligence',
       description: 'Expert in AI and Machine Learning with 10+ years of experience.',
-      email: 'johndoe@example.com',
+      email: 'johndoe@university.edu',
       availability: 'Available for new projects',
     },
     {
@@ -15,7 +18,7 @@ const SupervisorHighlights = () => {
       name: 'Dr. Jane Smith',
       expertise: 'Web Development',
       description: 'Specializes in modern web technologies and frameworks.',
-      email: 'janesmith@example.com',
+      email: 'janesmith@techuniversity.edu',
       availability: 'Currently mentoring 2 students',
     },
     {
@@ -23,30 +26,51 @@ const SupervisorHighlights = () => {
       name: 'Dr. Emily Davis',
       expertise: 'Data Science',
       description: 'Experienced in data analysis, visualization, and big data.',
-      email: 'emilydavis@example.com',
+      email: 'emily.davis@datasciencehub.org',
       availability: 'Available for consultation',
+    },
+    {
+      id: 4,
+      name: 'Dr. Michael Brown',
+      expertise: 'Cybersecurity',
+      description: 'Specialist in network security and ethical hacking.',
+      email: 'michael.brown@cybersecure.edu',
+      availability: 'Available for research collaborations',
+    },
+    {
+      id: 5,
+      name: 'Dr. Sarah Wilson',
+      expertise: 'Cloud Computing',
+      description: 'Expert in cloud architecture and distributed systems.',
+      email: 'sarah.wilson@cloudtech.edu',
+      availability: 'Currently mentoring 3 students',
+    },
+    {
+      id: 6,
+      name: 'Dr. David Lee',
+      expertise: 'Blockchain Technology',
+      description: 'Researcher in blockchain and decentralized systems.',
+      email: 'david.lee@blockchainresearch.org',
+      availability: 'Available for new projects',
     },
   ];
 
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-8">Supervisor Highlights</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {highlights.map((highlight) => (
-            <div key={highlight.id} className="p-6 border rounded-lg shadow-lg">
-              <h3 className="text-xl font-bold mb-2">{highlight.name}</h3>
-              <p className="text-blue-600 font-semibold mb-2">{highlight.expertise}</p>
-              <p className="text-gray-700 mb-4">{highlight.description}</p>
-              <p className="text-gray-500 mb-2">
-                <span className="font-semibold">Email:</span> {highlight.email}
-              </p>
-              <p className="text-green-600 font-semibold">{highlight.availability}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+    <SectionContainer className="bg-gray-50">
+      <h2 className="text-3xl font-bold mb-8 text-center">Supervisor Highlights</h2>
+      <CardLayout>
+        {highlights.map((highlight) => (
+          <SupervisorCard
+            key={highlight.id}
+            name={highlight.name}
+            expertise={highlight.expertise}
+            description={highlight.description}
+            email={highlight.email}
+            availability={highlight.availability}
+          />
+        ))}
+      </CardLayout>
+    </SectionContainer>
   );
 };
 

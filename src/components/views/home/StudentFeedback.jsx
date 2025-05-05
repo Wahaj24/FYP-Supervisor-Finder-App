@@ -8,11 +8,11 @@ const WhatStudentsSay = () => {
   ];
 
   return (
-    <div className="bg-gray-100 p-6">
-      <h2 className="text-3xl font-bold mb-4">What Students Say</h2>
+    <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+      <h2 className="text-3xl font-bold mb-6 text-center">What Students Say</h2>
       <ul className="space-y-4">
         {quotes.map((quote, index) => (
-          <li key={index} className="text-gray-700 italic">
+          <li key={index} className="text-gray-700 italic text-center">
             "{quote}"
           </li>
         ))}
