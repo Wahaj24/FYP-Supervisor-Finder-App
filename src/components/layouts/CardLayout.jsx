@@ -1,9 +1,12 @@
-const CardLayout = ({ children }) => {
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {children} 
-    </div>
-  );
-};
+import React from 'react'
 
-export default CardLayout;
+const CardLayout = ({ children, bgColor = 'bg-white', hoverEffect = true }) => {
+  return (
+    <div className={`${bgColor} p-6 rounded-xl border border-gray-100 shadow-sm 
+      ${hoverEffect ? 'hover:shadow-lg hover:-translate-y-1 transform transition-all duration-300' : ''}`}>
+      {children}
+    </div>
+  )
+}
+
+export default CardLayout
