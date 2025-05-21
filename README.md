@@ -1,12 +1,19 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+https://fyp-supervisor-finder-9bbfd.firebaseapp.com/
 
-Currently, two official plugins are available:
+FYP Supervisor Finder – Firebase Integrated Web App
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This application streamlines coordination between students, faculty, and administrators in the Final Year Project (FYP) process.
 
-## Expanding the ESLint configuration
+Users must first sign up or log in using their email (e.g., example@gmail.com) to access personalized dashboards based on their role: Student, Faculty, or Admin.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Students can view all available faculty supervisors filtered by domain or availability, and submit a single group project proposal by selecting a supervisor. They can track the status of their submission—whether it’s pending, accepted, rejected, or needs revision.
+
+Faculty members have the ability to manage their profile, update availability, and review project ideas submitted to them. They can respond to submissions by accepting, rejecting, or requesting revisions.
+
+Admins have full control over the system. They manage faculty members, view and update project ideas, and visualize key metrics such as supervisor availability and idea status using interactive charts.
+
+For account creation or deletion, users can return to the login page and choose “Sign Up” or “Delete Account” as needed.
+
+
+
