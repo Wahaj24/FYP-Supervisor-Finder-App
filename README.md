@@ -1,19 +1,15 @@
+https://fyp-supervisor-finder-9bbfd.web.app/
 
-https://fyp-supervisor-finder-9bbfd.firebaseapp.com/
+FYP Supervisor Finder – Firebase Integrated Web Application
+This web application simplifies and automates the coordination process among students, faculty, and administrators involved in the Final Year Project (FYP) at The University of Lahore. Users begin by registering or logging in with their email credentials, which grants them access to role-specific dashboards tailored for Students, Faculty, or Admins.
 
-FYP Supervisor Finder – Firebase Integrated Web App
+Students can explore a comprehensive list of faculty supervisors, filtering by domain expertise and availability, and submit a single project proposal per group by selecting a preferred supervisor. They can monitor the progress of their submission, receiving updates on whether their idea is pending review, accepted, rejected, or requires modifications.
 
-This application streamlines coordination between students, faculty, and administrators in the Final Year Project (FYP) process.
+Faculty members manage their profiles, update their availability, and review project proposals submitted to them. They have the authority to accept, reject, or request revisions for the ideas assigned to them.
 
-Users must first sign up or log in using their email (e.g., example@gmail.com) to access personalized dashboards based on their role: Student, Faculty, or Admin.
+Administrators oversee the entire system with full control—managing faculty records, monitoring project submissions, and updating statuses. They also benefit from interactive dashboards featuring visual analytics that summarize supervisor availability and project idea statuses.
 
-Students can view all available faculty supervisors filtered by domain or availability, and submit a single group project proposal by selecting a supervisor. They can track the status of their submission—whether it’s pending, accepted, rejected, or needs revision.
-
-Faculty members have the ability to manage their profile, update availability, and review project ideas submitted to them. They can respond to submissions by accepting, rejecting, or requesting revisions.
-
-Admins have full control over the system. They manage faculty members, view and update project ideas, and visualize key metrics such as supervisor availability and idea status using interactive charts.
-
-For account creation or deletion, users can return to the login page and choose “Sign Up” or “Delete Account” as needed.
+Users can manage their accounts by returning to the login page to sign up or delete their accounts as needed, ensuring flexible and secure access management.
 
 
 
